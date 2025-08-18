@@ -19,7 +19,7 @@ Responsive design → Mobile + Desktop sidebar toggle
 🛠️ Tech Stack
 Frontend: React (CRA), Hooks, JSX
 PDF Parsing: pdfjs-dist
-Word Parsing: mammoth (optional if added)
+Word Parsing: mammoth
 Backend (AI): Gemini API (via custom analyzeLegalDoc + chatWithGemini)
 State Management: React useState, useEffect
 
