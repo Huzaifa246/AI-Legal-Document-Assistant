@@ -1,5 +1,5 @@
 import * as pdfjsLib from "pdfjs-dist";
-import mammoth from "mammoth";
+// import mammoth from "mammoth";
 
 // pdfjsLib.GlobalWorkerOptions.workerSrc = workerSrc;
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
@@ -24,15 +24,15 @@ export async function extractTextFromFile(file) {
     return text.trim();
   }
   // --- Word logic ---
-  if (
-    type ===
-      "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
-    file.name.toLowerCase().endsWith(".docx")
-  ) {
-    const arrayBuffer = await file.arrayBuffer();
-    const result = await mammoth.extractRawText({ arrayBuffer });
-    return result.value.trim();
-  }
+  // if (
+  //   type ===
+  //     "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
+  //   file.name.toLowerCase().endsWith(".docx")
+  // ) {
+  //   const arrayBuffer = await file.arrayBuffer();
+  //   const result = await mammoth.extractRawText({ arrayBuffer });
+  //   return result.value.trim();
+  // }
 
   // Plain text fallback
   if (type.startsWith("text/") || file.name.toLowerCase().endsWith(".txt")) {

@@ -10,7 +10,7 @@ Upload your contracts, agreements, or policies in PDF, DOCX, or TXT format and g
 🗂 History management to revisit past analyses
 
 🚀 Features
-Multi-format file support → PDF, Word (.docx), TXT
+Multi-format file support → PDF, TXT
 AI-powered analysis → Summaries, analysis, plain English explanations
 Interactive Chat → Ask questions directly about your document
 History Sidebar → Save & manage past document analyses
@@ -19,7 +19,7 @@ Responsive design → Mobile + Desktop sidebar toggle
 🛠️ Tech Stack
 Frontend: React (CRA), Hooks, JSX
 PDF Parsing: pdfjs-dist
-Word Parsing: mammoth
+Word Parsing: mammoth  ---- removed due to free version on vercel - but works locally and on cloud
 Backend (AI): Gemini API (via custom analyzeLegalDoc + chatWithGemini)
 State Management: React useState, useEffect
 

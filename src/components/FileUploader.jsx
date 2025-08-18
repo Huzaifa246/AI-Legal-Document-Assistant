@@ -22,9 +22,9 @@ export default function FileUploader({ onTextReady }) {
   return (
     <div style={{ border: "1px solid #ddd", padding: 12, borderRadius: 8 }}>
       <label style={{ display: "block", marginBottom: 8, fontWeight: 600 }}>
-        Upload PDF or Word or TXT File Only
+        Upload PDF or TXT File Only
       </label>
-      <input type="file" accept=".pdf,.txt,.docx" onChange={handleFile} />
+      <input type="file" accept=".pdf,.txt" onChange={handleFile} />
       <div style={{ marginTop: 8, color: "#555" }}>
         {fileName && <div><strong>File:</strong> {fileName}</div>}
         {status && <div>{status}</div>}
