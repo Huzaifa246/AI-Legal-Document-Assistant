@@ -2,10 +2,13 @@ import * as pdfjsLib from "pdfjs-dist";
 // import mammoth from "mammoth";
 
 // pdfjsLib.GlobalWorkerOptions.workerSrc = workerSrc;
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.mjs",
-  import.meta.url
-).toString();
+// pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
+//   "pdfjs-dist/build/pdf.worker.mjs",
+//   import.meta.url
+// ).toString();
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://ai-legal-document-assistant.vercel.app/pdfjs/pdf.worker.min.mjs`;
+// pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 
 export async function extractTextFromFile(file) {
