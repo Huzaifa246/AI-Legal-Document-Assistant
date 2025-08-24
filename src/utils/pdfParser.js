@@ -9,7 +9,7 @@ import * as pdfjsLib from "pdfjs-dist";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://ai-legal-document-assistant.vercel.app/pdfjs/pdf.worker.min.mjs`;
 // pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
-
+ 
 
 export async function extractTextFromFile(file) {
   const type = file.type || "";
